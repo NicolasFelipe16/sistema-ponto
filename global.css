@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .25s;
+}
+
+:root {
+    --color-01: #eaeaea;
+    --color-02: #ffffff;
+    --color-03: #cccccc;
+    --color-04: #41a5b4;
+}
