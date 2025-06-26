@@ -5,7 +5,7 @@ routes = Blueprint('routes', __name__)
 
 @routes.route("/")
 def home():
-    return redirect(url_for('routes.login'))
+    return redirect(url_for('routes.cadastro_funcionario'))
 
 @routes.route("/login")
 def login():
@@ -13,8 +13,6 @@ def login():
 
 @routes.route("/enviar_dados_login", methods=['POST'])
 def enviar_dados_login():
-    # id = request.form("id")
-    # password = request.form.get("password")
 
     # AINDA NÃO FAZ VALIDAÇÃO
 

@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='cadastro_funcionario.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">    
     <title>Cadastro de funcionário</title>
 </head>
 
 <body>
+    <a href="/login" class="login_button">Login</a>
+    
     <div class="container">
         <h2 class="title">Cadastro de funcionário</h2>
         <form action="/enviar_dados_funcionario" method="POST">
