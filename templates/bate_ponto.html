@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}">    
+    <link rel="stylesheet" href="{{ url_for('static', filename='bateponto.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='menu.css') }}">
+    <title>Bater Ponto</title>
+</head>
+<body>
+
+    <div class="menu-container">
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <div class="menu" id="menu">
+          <a href="/dashboard">Dashboard</a>
+          <a href="/index">Login</a>
+          <a href="/justificativas">Justificativas</a>
+         
+        </div>
+      </div>
+    
+      <script>
+        function toggleMenu() {
+          const menu = document.getElementById('menu');
+          menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+        }
+      </script>
+
+
+
+
+    <div class="container">
+        <h2 class="title">Registro de ponto</h2>
+
+        <h3 class="clock">00:00:00</h3>
+ 
+        <ul>
+            <li><button onclick="registrar('Entrada')">Registrar Entrada</button></li>
+            <li><button onclick="registrar('Saída para Almoço')">Registrar Saída para Almoço</button></li>
+            <li><button onclick="registrar('Retorno do Almoço')">Registrar Retorno do Almoço</button></li>
+            <li><button onclick="registrar('Saída')">Registrar Saída</button></li>
+        </ul>
+    </div>
+
+</body>
+</html>

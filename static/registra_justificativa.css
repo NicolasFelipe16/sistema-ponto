@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background: var(--color-04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: var(--font-01);
+}
+
+.container {
+    background-color: var(--color-02);
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    max-width: 80%;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+label {
+    display: block;
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    /* margin-bottom: 15px; */
+    border-radius: 5px;
+    outline: 1px solid var(--color-03);
+    border: 2px solid transparent;
+}
+
+input:invalid:hover,
+input:active,
+input:focus {
+    border-color: var(--color-04);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-04);
+    border: none;
+    outline: none;
+    color: var(--color-02);
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--font-01);
+}
+
+button:hover,
+button:focus {
+    filter: brightness(.95); 
+    letter-spacing: 1px;
+}
+
+.tipo-ocorrencia,
+.data-ocorrencia {
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+#motivo{
+    width: 100%;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='registra_justificativa.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='menu.css') }}">
+        <title>Registro de justificativa</title>
+    </head>
+<body>
+
+    <div class="menu-container">
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <div class="menu" id="menu">
+          <a href="/dashboard">Dashboard</a>
+          <a href="/index">Login</a>
+          <a href="/bater_ponto">Bater Ponto</a>
+         
+        </div>
+      </div>
+    
+      <script>
+        function toggleMenu() {
+          const menu = document.getElementById('menu');
+          menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+        }
+      </script>
+
+
+    <div class="container">
+        <h1>Registro de Justificativa</h1>
+        <form action="/enviar-justificativa" method="post">
+            <fieldset class="data-ocorrencia">
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+            </fieldset>
+
+            <fieldset class="tipo-ocorrencia">
+                <label for="tipo">Tipo de ocorrência:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="">Selecione</option>
+                    <option value="falta">Falta</option>
+                    <option value="atraso">Atraso</option>
+                </select>
+            </fieldset>
+
+            <label for="motivo">Justificativa:</label>
+            <textarea id="motivo" name="motivo" rows="5" required></textarea>
+
+            <button type="submit">Enviar Justificativa</button>
+        </form>
+    </div>
+</body>
+</html>

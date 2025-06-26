@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}">    
+    <link rel="stylesheet" href="{{ url_for('static', filename='bateponto.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='menu.css') }}">
+    <title>Justificativas</title>
+</head>
+<body>
+    <div class="menu-container">
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <div class="menu" id="menu">
+          <a href="/dashboard">Dashboard</a>
+          <a href="/index">Login</a>
+          <a href="/bater_ponto">Bater Ponto</a>
+         
+        </div>
+      </div>
+    
+      <script>
+        function toggleMenu() {
+          const menu = document.getElementById('menu');
+          menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+        }
+      </script>
+</body>
+</html>

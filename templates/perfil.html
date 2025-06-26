@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='menu.css') }}">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="menu-container">
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <div class="menu" id="menu">
+            <a href="/dashboard">Dashboard</a>
+            <a href="/index">Login</a>
+            <a href="/bater_ponto">Bater Ponto</a>
+
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+        }
+    </script>
+
+
+    <h1>Perfil do funcionário</h1>
+
+    <div class="Perfil">
+
+        <p>ID: 000000</p>
+
+        <p>Nome: Nome funcionário</p>
+
+        <p>E-mail: funcionario@empres.com</p>
+
+        <p>Cargo: Cargo do funcionario</p>
+
+        <p>Departamento: Setor</p>
+
+        <p>Data de admissão: 00/00/0000</p>
+
+        <p>Jornada de trabalho: de 08:00 às 17:00</p>
+
+        <p></p>
+    </div>
+
+</body>
+
+</html>

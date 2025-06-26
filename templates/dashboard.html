@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <a href="/">
+        <button type="button" class="btn-voltar">Voltar</button>
+    </a>
+
+    <div class="container">
+        <form>
+            <a href="/bate-ponto">
+                <button type="button">Bater Ponto</button>
+            </a>
+
+            <a href="/justificativas">
+                <button type="button">Justificativas</button>
+            </a>
+
+            <a href="/registrar-justificativa">
+                <button type="button">Registrar justificativa</button>
+            </a>
+
+            <a href="/relatorio">
+                <button type="button">Relatório de pontos</button>
+            </a>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+header {
+    width: 100%; 
+    margin-bottom: 20px;
+    text-align: center; 
+    color: white;
+    background-color: var(--color-04);
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--color-04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: var(--font-01); 
+}
+
+
+.container {
+    background-color: var(--color-02);
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 80%;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-04);
+    border: none;
+    outline: none;
+    color: var(--color-02);
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--font-01);
+    margin: 10px 0;
+}
+
+
+button:hover {
+    filter: brightness(.95);
+    letter-spacing: 1px;
+}
+
+
+.btn-voltar {
+  position: fixed !important;
+  top: 10px !important;
+  left: 10px !important;
+  padding: 10px 20px;
+  background-color: var(--color-04);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 9999;
+  width: 100px;
+}
+
+
+.btn-voltar:hover {
+  background-color: var(--color-04);
+}

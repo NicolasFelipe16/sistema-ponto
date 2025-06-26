@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">    
+    <title>Cadastro de funcionário</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="title">Cadastro de funcionário</h2>
+        <form action="/enviar_dados_funcionario" method="POST">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required autofocus>
+
+            <label for="surname">Sobrenome</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" required>
+
+            <button>Cadastrar</button>
+        </form>
+    </div>
+    
+</body>
+
+</html>
